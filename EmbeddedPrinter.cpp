@@ -149,7 +149,7 @@ void EmbeddedPrinter::big(CharBigTimes bigTimes) {
 }
 
 /* font size */
-void EmbeddedPrinter:big(uint8_t  times) {
+void EmbeddedPrinter:big(uint8_t times) {
     CharBigTimes sizeTimes;
     times = constrain(times, 0, 7);
     sizeTimes.height = times;
@@ -215,7 +215,7 @@ void EmbeddedPrinter::space(uint8_t n) {
 }
 
 /* reverse the direction of chars vertical */
-void updown(bool flag) {
+void EmbeddedPrinter::updown(bool flag) {
     serial->write(0x1B);
     serial->write(0x7B);
     serial->write((uint8_t)flag);
@@ -226,7 +226,7 @@ void updown(bool flag) {
  * 1 -> 1 point width
  * 2 -> 2 point width
  * */
-void underline(uint8_t flag) {
+void EmbeddedPrinter::underline(uint8_t flag) {
     flag = constrain(flag, 0, 2);
     serial->write(0x1B);
     serial->write(0x2D);
