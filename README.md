@@ -1,6 +1,6 @@
 # EmbeddedPrinter
 
-这是一个Arduino库，专门针对于[歌翼科技](http://www.dp-geyi.com/)的嵌入式热敏打印机，库的测试机型为EH405，是12V，TTL电平的。库中定义了 **EmbbededPrinter** 类，可以简单认为这个库为一个中间层的库，基于串口，以串口实例指针构造打印机实例，在类中直接操作指定的串口与打印机进行交互。
+这是一个Arduino库，专门针对于[歌翼科技](http://szgykjyx.sotongwang.com/)的嵌入式热敏打印机，库的测试机型为EH405，是12V，TTL电平的。库中定义了 **EmbbededPrinter** 类，可以简单认为这个库为一个中间层的库，基于串口，以串口实例指针构造打印机实例，在类中直接操作指定的串口与打印机进行交互。
 
 ## API
 
